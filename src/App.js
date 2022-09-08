@@ -4,10 +4,10 @@ import { Box } from "@mui/material";
 import { Home, Navbar, ExerciseDetails, Footer } from "./components/index";
 const App = () => {
   return (
-    <Box width="400px">
+    <Box width="400px" sx={{width: {xl: '1488px'}}} m='auto'>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/exercise/:id" element={<ExerciseDetails />} />
       </Routes>
       <Footer />
