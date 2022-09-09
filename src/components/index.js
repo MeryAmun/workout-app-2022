@@ -9,7 +9,10 @@ import { default as HorizontalScrollbar } from './HorizontalScrollbar';
 import { default as BodyPart } from './BodyPart';
 import { default as ExerciseCard } from './ExerciseCard';
 import { default as Details } from './Details';
+import { default as ExerciseVideos } from './ExerciseVideos';
+import { default as Loader } from './Loader';
+import { default as SimilarExercises } from './SimilarExercises';
 export {
     Home, Navbar, ExerciseDetails,Footer,HeroBanner,SearchExercises,
-    Exercises,HorizontalScrollbar,BodyPart, ExerciseCard,Details
+    Exercises,HorizontalScrollbar,BodyPart, ExerciseCard,Details,ExerciseVideos,Loader,SimilarExercises
 }
