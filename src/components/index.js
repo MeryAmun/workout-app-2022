@@ -8,7 +8,8 @@ import { default as Exercises } from './Exercises';
 import { default as HorizontalScrollbar } from './HorizontalScrollbar';
 import { default as BodyPart } from './BodyPart';
 import { default as ExerciseCard } from './ExerciseCard';
+import { default as Details } from './Details';
 export {
     Home, Navbar, ExerciseDetails,Footer,HeroBanner,SearchExercises,
-    Exercises,HorizontalScrollbar,BodyPart, ExerciseCard
+    Exercises,HorizontalScrollbar,BodyPart, ExerciseCard,Details
 }

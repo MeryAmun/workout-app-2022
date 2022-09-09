@@ -10,8 +10,9 @@ const Home = () => {
 <HeroBanner/>
 <SearchExercises bodyPart={bodyPart} setBodyPart={setBodyPart}
  setExercises={setExercises}/>
-<Exercises bodyPart={bodyPart} setBodyPart={setBodyPart}
- setExercises={setExercises} exercises={exercises}/>
+<Exercises  exercises={exercises} setExercises={setExercises}
+bodyPart={bodyPart} 
+  />
     </Box>
   )
 }
