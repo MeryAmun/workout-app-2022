@@ -4,8 +4,8 @@ import BodyPartImage from "../assets/icons/body-part.png";
 import TargetImage from "../assets/icons/target.png";
 import EquipmentImage from "../assets/icons/equipment.png";
 
-const Details = ({ exerciseDetails }) => {
-  const { bodyPart, gifUrl, name, target, equipment } = exerciseDetails;
+const Details = (props) => {
+ const { bodyPart, gifUrl, name, target, equipment } = props.exerciseDetails;
 
   const extraDetail = [
     {
@@ -39,8 +39,8 @@ const Details = ({ exerciseDetails }) => {
           exercises to target your {target}.It will improve your <br /> mood and
           gain energy.
         </Typography>
-        {extraDetail?.map((item) => (
-          <stack direction="row" gap="24px" alignItems="center" key={item.name}>
+        {extraDetail?.map((item,index) => (
+          <Stack direction="row" gap="24px" alignItems="center" key={item.name}>
             <Button
               sx={{
                 background: "#FFF2DB",
@@ -58,8 +58,8 @@ const Details = ({ exerciseDetails }) => {
             <Typography
               textTransform="capitalize"
               sx={{ fontsize: { lg: "30px", xs: "20px" } }}
-            ></Typography>
-          </stack>
+            >{item.name}</Typography>
+          </Stack>
         ))}
       </Stack>
     </Stack>
